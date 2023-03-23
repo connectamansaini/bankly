@@ -54,7 +54,6 @@ class HomeView extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              // TODO(ask): How to change textColor for a view
               children: [
                 Text(
                   'Total Balance',
@@ -183,7 +182,6 @@ class HomeView extends StatelessWidget {
                                 const Spacing(size: SpacingSize.regular),
                                 const TitleWidget(title: 'Explore Categories'),
                                 const Spacing(size: SpacingSize.medium),
-                                // TODO(ask): How to remove padding in starting in front of gridView?
                                 CategoriesGridView(textStyle: textStyle),
                                 const Spacing(size: SpacingSize.xL),
                                 const TitleWidget(

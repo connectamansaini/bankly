@@ -103,8 +103,6 @@ class _CardWidgetState extends State<CardWidget> {
   @override
   Widget build(BuildContext context) {
     const cardNumber = '4737 9618 4974';
-    const cardNumberHidden = '**** **** ****';
-    var isCardVisible = false;
 
     return Container(
       height: 30.h,
@@ -127,7 +125,6 @@ class _CardWidgetState extends State<CardWidget> {
                 RichText(
                   text: TextSpan(
                     text: 'Balance\n',
-                    // TODO(ask): Should I do theming like this?
                     style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           color: AppColors.lightWhiteColor,
                         ),
@@ -151,8 +148,7 @@ class _CardWidgetState extends State<CardWidget> {
             Row(
               children: [
                 Text(
-                  // TODO(ask): Why this not working?
-                  isCardVisible ? '$cardNumber 2489' : '$cardNumberHidden 2489',
+                  '$cardNumber 2489',
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         color: Colors.white,
                       ),
@@ -161,11 +157,7 @@ class _CardWidgetState extends State<CardWidget> {
                 IconButton(
                   // padding: EdgeInsets.zero,
                   // constraints: const BoxConstraints(),
-                  onPressed: () {
-                    setState(() {
-                      isCardVisible = !isCardVisible;
-                    });
-                  },
+                  onPressed: () {},
                   icon: const Icon(
                     Icons.visibility,
                     color: Colors.white,
