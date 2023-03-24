@@ -1,3 +1,3 @@
 # bankly
 
-UI made using Flutter.
+UI of **Splash** screen, **Onboarding**, Phone **login** and **Home** screen made using Flutter.
