@@ -1,3 +1,3 @@
 # bankly
 
-A new Flutter project.
+UI made using Flutter.
